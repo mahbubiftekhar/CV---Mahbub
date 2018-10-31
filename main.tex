@@ -1,0 +1,186 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.4, 27 July 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options.
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+\usepackage{hyperref}
+
+% Change the colours if you want to
+\definecolor{PineGreen}{HTML}{01796F}
+\definecolor{ForestGreen}{HTML}{014421}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+%   YOU CAN CHOOSE WHICH COLOURS YOU PREFER.... I THINK THE SAME COLOUR FOR HEADING AND ACCENT IS MORE APPEALING; AESTHETICALLY, THANKS ANNA! 
+\colorlet{heading}{ForestGreen}
+\colorlet{accent}{ForestGreen}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{\href{https://www.mahbubiftekhar.co.uk/}{Mahbub Iftekhar}}
+\tagline{Final Year Computer Science Student}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%\photo{2.5cm}{mmayer-wikipedia-cc-by-2_0}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{mahbub2@iftekhar.co.uk}
+  \phone{+447552695272}
+  \phone{+441315818775}
+  \location{Edinburgh, United Kingdom}
+  \homepage{https://www.mahbubiftekhar.co.uk/}
+  \linkedin{https://www.linkedin.com/in/mahbub-iftekhar/}
+  \github{https://github.com/mahbubiftekhar/}
+
+  % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+\cvsection[page1sidebar]{WORK}
+\cvevent{Supervisor}{Shimla LTD (Shamoli Restaurant)}{August 2017 -- Ongoing}{Edinburgh, UK}
+
+\divider
+
+\cvevent{Computing Support Technician}{The University of Edinburgh}{May 2018 -- August 2018}{Edinburgh, UK}
+\begin{itemize}
+\item My tasks were to work in groups to efficiently carry out maintenance and repairs on University computer equipment. Upgrade existing infrastructure and design and install new equipment to improve facilities. 
+\end{itemize}
+
+
+\cvsection[page1sidebar]{PROJECTS}
+
+\cvevent{Swipe 2 Sort - Final Year, Honours Project}{Android Developer}{August 2018 -- May 2019}{Edinburgh, UK}
+\begin{itemize}
+\item Swipe 2 Sort is a Kotlin Android app designed to make organising your many photos easy, fun and simple! It is my final year project.
+\end{itemize}
+\divider
+
+%%\href{https://github.com/mahbubiftekhar/quickSMS}{JP Morgan Code for Good - 2018}.
+
+\cvevent{\href{https://github.com/mahbubiftekhar/JPMorgan_CODEFORGOOD_2018}{JP Morgan Code for Good - 2018}.
+}{Database \& HTML Developer}{27th \& 28th of October 2018}  {Glasgow, UK}
+\begin{itemize}
+\item Code for Good is a 24 hour, competitive event to work as a team to develop a solution for an NGO. We developed a web application to help the charity, Children with Cancer UK, allow the kids to communicate with one another in a safe and easy to use environment.
+\end{itemize}
+\divider
+
+%%\href{https://github.com/mahbubiftekhar/RoboTour}{RoboTour - Autonomous Robot}.
+
+\cvevent{\href{https://github.com/mahbubiftekhar/RoboTour}{RoboTour - Autonomous Robot}}{Team Leader \& Android Developer}{January 2018 -- May 2018}{Edinburgh, UK}
+\begin{itemize}
+\item The project was working in a group of 7, designing and developing an autonomous robot from scratch, using an EV3 mind storm which was controlled by multiple Android Devices.
+
+\end{itemize}
+\divider
+%%\href{https://github.com/mahbubiftekhar/quickSMS}{quickSMS - Kotlin Android App}.
+
+\cvevent{\href{https://github.com/mahbubiftekhar/quickSMS}{quickSMS - Kotlin Android App}}{Android Developer \& Co-Creator}{December 2017 -- June 2018}{Edinburgh, UK}
+\begin{itemize}
+\item quickSMS was an Android App I co-developed with my friend Alex Shand. quickSMS was written from scratch, using the emerging language, Kotlin. 
+\itemUser studies were used to help design and improve the UI interface. The app has been published to the Google Play store for the general public to enjoy.
+
+\end{itemize}
+\divider
+%%\href{https://github.com/mahbubiftekhar/Songle}{Songle - Kotlin Android App}.
+
+\cvevent{\href{https://github.com/mahbubiftekhar/Songle}{Songle - Kotlin Android App}.}{Android Developer}{September 2017 -- December 2017}{Edinburgh, UK}
+\begin{itemize}
+\item Songle was the very first Android app I developed; Songle was a location-based game, where the user would walk around collecting words in the University of Edinburgh central campus and obtaining the words by going close to markers.
+
+\end{itemize}
+% \divider
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+%\cvsection{A Day of My Life}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% Some ad-hoc tweaking to adjust the labels so that they don't overlap
+%\wheelchart{1.5cm}{0.5cm}{%
+%  10/10em/accent!30/Sleeping \& dreaming about work,
+%  25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
+%  5/13em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
+%  20/15em/accent!40/Spending time with family,
+%  5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
+%  30/9em/accent/Showing Yahoo!\ employees that their work has meaning,
+%  5/8em/accent!20/Baking cupcakes
+%}
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}

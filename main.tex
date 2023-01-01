@@ -1,49 +1,13 @@
-%%%%%%%%%%%%%%%%%
-% This is an example CV created using altacv.cls (v1.1.4, 27 July 2018) written by
-% LianTze Lim (liantze@gmail.com), based on the
-% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
-%
-%% It may be distributed and/or modified under the
-%% conditions of the LaTeX Project Public License, either version 1.3
-%% of this license or (at your option) any later version.
-%% The latest version of this license is in
-%%    http://www.latex-project.org/lppl.txt
-%% and version 1.3 or later is part of all distributions of LaTeX
-%% version 2003/12/01 or later.
-%%%%%%%%%%%%%%%%
-
-%% If you want to use \orcid or the
-%% academicons icons, add "academicons"
-%% to the \documentclass options.
-%% Then compile with XeLaTeX or LuaLaTeX.
-% \documentclass[10pt,a4paper,academicons]{altacv}
-
-%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
-% \documentclass[10pt,a4paper,normalphoto]{altacv}
-
 \documentclass[8pt,a4paper]{altacv}
-
-%% AltaCV uses the fontawesome and academicon fonts
-%% and packages.
-%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
-%% When using the "academicons" option,
-%% Compile with LuaLaTeX for best results. If you
-%% want to use XeLaTeX, you may need to install
-%% Academicons.ttf in your operating system's font %% folder.
-
-
 % Change the page layout if you need to
 \geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
 
-% Change the font if you want to.
-
-% If using pdflatex:
+% Change the font if you want
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[default]{lato}
 
-% If using xelatex or lualatex:
-% \setmainfont{Lato}
+
 \usepackage{hyperref}
 
 % Change the colours if you want to
@@ -57,26 +21,17 @@
 \colorlet{emphasis}{SlateGrey}
 \colorlet{body}{LightGrey}
 
-% Change the bullets for itemize and rating marker
-% for \cvskill if you want to
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
 
-%% sample.bib contains your publications
 \addbibresource{sample.bib}
 
 \begin{document}
 \name{\href{https://www.mahbubiftekhar.co.uk/}{Mahbub Iftekhar}}
-\tagline{Senior Software Engineer - Leonardo UK LTD}
-% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
-%\photo{2.5cm}{mmayer-wikipedia-cc-by-2_0}
-\personalinfo{%
-% You can add your own with \printinfo{symbol}{detail}
-                % Email
-
-\email{\href{mailto:mahbub2@iftekhar.co.uk}{mahbub2@iftekhar.co.uk}  }
+\tagline{Senior Software Engineer - Leonardo UK}
+\personalinfo{
+\email{\href{mailto:mahbub2@iftekhar.co.uk}{mahbub2@iftekhar.co.uk}}
 \phone{\href{tel:+447552695272}{+44 7552 69 5272}}
-\phone{\href{tel:+441315818775}{+44 131 581 8775}}
 \location{Edinburgh, United Kingdom}
 \homepage{\href{https://www.mahbubiftekhar.co.uk/}{https://www.mahbubiftekhar.co.uk/}}
 \linkedin{\href{https://www.linkedin.com/in/mahbub-iftekhar/}{https://www.linkedin.com/in/mahbub-iftekhar/}}
@@ -88,16 +43,18 @@
 \end{fullwidth}
 
 \AtBeginEnvironment{itemize}{\small}
-
 \cvsection[page1sidebar]{WORK}
-
 \cvevent{Senior Software Engineer}{Leonardo UK LTD}{July 2019 -- Current}{Edinburgh, UK}
 \smallskip
-\irem Graduate Software Engineer: July 2019 - July 2021
-\item Software Engineer: August 2021 - November 2022
-\item Senior Software Engineer: December 2022 - Current
+\item Graduate Software Engineer: July 2019     - July 2021
+\item Software Engineer:          August 2021   - November 2022
+\item Senior Software Engineer:   December 2022 - Current
+\smallskip
 \begin{itemize}
-\item Leonardo, formerly Leonardo-Finmeccanica and Finmeccanica, is an Italian multinational company specialising in aerospace, defence and security. Headquartered in Rome, the company has 180 sites worldwide. With over 7,000 people employed across the UK, Leonardo is one of the UK's leading aerospace companies and one of biggest suppliers of defence and security equipment to the UK MoD.
+\item Leonardo, formerly Leonardo-Finmeccanica and Finmeccanica, is an Italian multinational company specialising in aerospace, defence and security. 
+Working as a Software Engineer in an Agile environment. My day to day tasks involve working on the Raven ES-05 Radar.
+Developing efficient, fast and robust C++ code and employing best coding practises within a critical environment. Employing agile methodologies to implement new modes and changes as per customer requirements.   
+
 \divider
 \end{itemize}
 
@@ -123,9 +80,7 @@
 \item Main tasks: to work as part of a team, efficiently carrying out maintenance and repairs on University computer equipment; upgrading existing infrastructure; planning for, then installing new equipment to improve facilities.
 \end{itemize}
 
-
 \cvsection[page1sidebar]{PROJECTS}
-
 \cvevent{\href{https://play.google.com/store/apps/details?id=miftekhar.swipe2sort}{Swipe 2 Sort - Final Year, Honours Project}}{Android Developer}{August 2018 -- May 2019}{Edinburgh, UK}
 \begin{itemize}
 \item Swipe 2 Sort is my final year project. A Kotlin Android app designed to make organising user's many photos simple and fun, it will be released on the Play Store towards the end of 2018.
@@ -142,12 +97,6 @@
 \cvevent{\href{https://github.com/mahbubiftekhar/RoboTour}{RoboTour - Autonomous Robot}}{Team Leader \& Android Developer}{January 2018 -- May 2018}{Edinburgh, UK}
 \begin{itemize}
 \item The project involved working within a 7-strong group, designing and developing an autonomous robot from scratch, using an EV3 mind storm which was controlled by multiple Android Devices.
-\end{itemize}
-\divider
-
-\cvevent{\href{https://github.com/mahbubiftekhar/quickSMS}{quickSMS - Kotlin Android App}}{Android Developer \& Co-Creator}{December 2017 -- June 2018}{Edinburgh, UK}
-\begin{itemize}
-\item quickSMS is an Android App I co-developed with Alex Shand. quickSMS was written from scratch, using the emerging language, Kotlin. Studies were used to help design and improve the UI interface. The app has subsequently been published on the Google Play store for the public to enjoy.
 \end{itemize}
 \divider
 
